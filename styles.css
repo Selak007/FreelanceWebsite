@@ -302,3 +302,74 @@ body[data-theme="dark"] .theme-toggle {
     background: #333;
     color: #fff;
 }
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: var(--hero-bg);
+}
+
+.btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--btn-primary-hover-bg);
+}
+
+.featured-jobs {
+    padding: 2rem 0;
+}
+
+.flashcards {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.flashcard {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1rem;
+    flex: 1 0 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--btn-secondary-hover-bg);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-bg);
+}

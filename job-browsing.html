@@ -16,23 +16,36 @@
         </nav>
     </header>
 
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+
     <div class="container">
-        <h1>Browse Jobs</h1>
-        <section>
-            <input type="text" id="search" placeholder="Search for jobs...">
-            <button>Search</button>
-        </section>
-        <section>
-            <h2>Job Listings</h2>
-            <ul>
-                <li>Job Title 1 - Budget: $500 - Deadline: 2024-09-30</li>
-                <li>Job Title 2 - Budget: $300 - Deadline: 2024-10-15</li>
-            </ul>
+        <section class="job-browsing">
+            <h2>Browse Jobs</h2>
+            <form class="search-form">
+                <input type="text" placeholder="Search by title or keywords">
+                <button type="submit" class="btn-primary">Search</button>
+            </form>
+            
+            <div class="flashcards">
+                <div class="flashcard">
+                    <h3>Content Writer Needed</h3>
+                    <p>Write engaging content for our blog and marketing materials.</p>
+                    <a href="job-detail.html?job=3" class="btn-secondary">View Details</a>
+                </div>
+                <div class="flashcard">
+                    <h3>SEO Specialist</h3>
+                    <p>Improve our website's search engine ranking and drive traffic.</p>
+                    <a href="job-detail.html?job=4" class="btn-secondary">View Details</a>
+                </div>
+                <!-- Add more flashcards as needed -->
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Freelancer Platform. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

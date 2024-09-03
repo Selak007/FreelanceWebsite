@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Posting | Freelancer Platform</title>
+    <title>Post a Job | Freelancer Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,30 +16,37 @@
         </nav>
     </header>
 
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+
     <div class="container">
-        <h1>Post a Job</h1>
-        <form>
-            <label for="job-title">Job Title:</label>
-            <input type="text" id="job-title" name="job-title" required>
-            <br>
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
-            <br>
-            <label for="skills">Required Skills:</label>
-            <input type="text" id="skills" name="skills" required>
-            <br>
-            <label for="budget">Budget:</label>
-            <input type="number" id="budget" name="budget" required>
-            <br>
-            <label for="deadline">Deadline:</label>
-            <input type="date" id="deadline" name="deadline" required>
-            <br>
-            <button type="submit">Post Job</button>
-        </form>
+        <section class="job-posting">
+            <h2>Post a New Job</h2>
+            <form action="#" method="post">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Job Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                
+                <label for="skills">Required Skills:</label>
+                <input type="text" id="skills" name="skills" required>
+                
+                <label for="budget">Budget:</label>
+                <input type="number" id="budget" name="budget" required>
+                
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required>
+                
+                <button type="submit" class="btn-primary">Post Job</button>
+            </form>
+        </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Freelancer Platform. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+

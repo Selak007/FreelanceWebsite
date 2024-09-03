@@ -16,35 +16,41 @@
         </nav>
     </header>
 
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+
     <div class="container">
-        <h1>Client Dashboard</h1>
-        <section>
-            <h2>Active Job Postings</h2>
-            <ul>
-                <li>Job Title 1 - Status: Open</li>
-                <li>Job Title 2 - Status: In Progress</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Applications Received</h2>
-            <ul>
-                <li>Freelancer Name - Status: Reviewed</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Ongoing Projects</h2>
-            <ul>
-                <li>Project Title - Status: Active</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Payment Status</h2>
-            <p>Overview of recent payments.</p>
+        <section class="dashboard-client">
+            <h2>Client Dashboard</h2>
+            <div class="dashboard-stats">
+                <h3>Active Job Postings</h3>
+                <ul>
+                    <li><a href="job-detail.html?job=1">Web Developer Needed</a></li>
+                    <!-- Add more job postings as needed -->
+                </ul>
+            </div>
+
+            <div class="dashboard-stats">
+                <h3>Applications Received</h3>
+                <ul>
+                    <li><a href="freelancer-profile.html">Freelancer 1</a></li>
+                    <!-- Add more applications as needed -->
+                </ul>
+            </div>
+
+            <div class="dashboard-stats">
+                <h3>Ongoing Projects</h3>
+                <ul>
+                    <li><a href="project-detail.html">Project 1</a></li>
+                    <!-- Add more projects as needed -->
+                </ul>
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Freelancer Platform. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -16,27 +16,34 @@
         </nav>
     </header>
 
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+
     <div class="container">
-        <h1>Live Learning</h1>
-        <section>
-            <h2>Upcoming Live Sessions</h2>
-            <ul>
-                <li>Session Title 1 - Date/Time</li>
-                <li>Session Title 2 - Date/Time</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Join a Session</h2>
-            <button>Join Now</button>
-        </section>
-        <section>
-            <h2>Certifications</h2>
-            <p>Details about certifications that can be earned from live sessions.</p>
+        <section class="live-learning">
+            <h2>Live Learning</h2>
+            <div class="live-sessions">
+                <h3>Upcoming Live Sessions</h3>
+                <div class="flashcards">
+                    <div class="flashcard">
+                        <h4>Introduction to Python</h4>
+                        <p>Date: September 25, 2024</p>
+                        <a href="session-detail.html?session=3" class="btn-secondary">Join Session</a>
+                    </div>
+                    <div class="flashcard">
+                        <h4>Data Science Basics</h4>
+                        <p>Date: October 1, 2024</p>
+                        <a href="session-detail.html?session=4" class="btn-secondary">Join Session</a>
+                    </div>
+                    <!-- Add more sessions as needed -->
+                </div>
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Freelancer Platform. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

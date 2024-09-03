@@ -16,23 +16,36 @@
         </nav>
     </header>
 
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+
     <div class="container">
-        <h1>Browse Courses</h1>
-        <section>
-            <input type="text" id="search" placeholder="Search for courses...">
-            <button>Search</button>
-        </section>
-        <section>
-            <h2>Course Listings</h2>
-            <ul>
-                <li>Course Title 1 - Difficulty: Intermediate - Price: $100</li>
-                <li>Course Title 2 - Difficulty: Beginner - Price: $50</li>
-            </ul>
+        <section class="course-browsing">
+            <h2>Browse Courses</h2>
+            <form class="search-form">
+                <input type="text" placeholder="Search by course title or subject">
+                <button type="submit" class="btn-primary">Search</button>
+            </form>
+            
+            <div class="flashcards">
+                <div class="flashcard">
+                    <h3>Introduction to Web Development</h3>
+                    <p>Learn the basics of web development, including HTML, CSS, and JavaScript.</p>
+                    <a href="course-detail.html?course=1" class="btn-secondary">View Details</a>
+                </div>
+                <div class="flashcard">
+                    <h3>Advanced SEO Techniques</h3>
+                    <p>Master advanced techniques to improve your website's SEO performance.</p>
+                    <a href="course-detail.html?course=2" class="btn-secondary">View Details</a>
+                </div>
+                <!-- Add more flashcards as needed -->
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 Freelancer Platform. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
